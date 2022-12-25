@@ -1,0 +1,20 @@
+.Data {
+    margin: 1em 0em 0em 0em;
+    align-items: left;
+  }
+
+.DataCol {
+    margin-bottom: 10em;
+}
+
+.label {
+    font-weight: 200;
+    padding: 0;
+    text-align: left;
+}
+
+.value {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+}

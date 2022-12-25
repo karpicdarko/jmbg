@@ -1,0 +1,58 @@
+.App {
+    display: flex;
+    height: 100vh;
+  }
+
+.Title {
+  margin: 2em 0em 3em 0em;
+  color: rgb(2, 4, 52);
+}
+
+.Data {
+  margin: 2em 0em 3em 0em;
+  color: rgb(2, 4, 52);
+}
+
+.Drawer {
+  flex: 7%;
+  background-color: rgb(23, 59, 118);
+  text-align: center;
+  padding: 0.5em 0em 0em 0em;
+}
+
+.Content {
+  text-align: center;
+  flex: 93%;
+}
+
+img {
+  height: 110px;
+}
+
+@media screen and (max-width:500px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Drawer {
+    flex: 5%;
+    background-color: rgb(23, 59, 118);
+    text-align: left;
+    padding: 0.5em 0em 0.5em 1em;
+  }
+  
+  .Content {
+    text-align: center;
+    flex: 95%;
+  }
+
+  img {
+    height: 80px;
+  }
+
+}
+
+/* div {
+  border-style: solid;
+} */

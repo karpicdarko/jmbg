@@ -1,0 +1,82 @@
+{
+    "Stranci": { "min": 1, "max": 9, "data": [
+        { "number": 1, "name": "stranci u BiH" },
+        { "number": 2, "name": "stranci u Crnoj Gori" },
+        { "number": 3, "name": "stranci u Hrvatskoj" },
+        { "number": 4, "name": "stranci u Makedoniji" },
+        { "number": 5, "name": "stranci u Sloveniji" },
+        { "number": 7, "name": "stranci u Srbiji (bez pokrajina)" },
+        { "number": 8, "name": "stranci u Vojvodini" },
+        { "number": 9, "name": "stranci na Kosovu i Metohija" }
+    ] },
+    "Bosna i Hercegovina" : { "min": 10, "max": 19, "data": [
+        { "number": 10, "name": "Banja Luka" },
+        { "number": 11, "name": "Bihać" },
+        { "number": 12, "name": "Doboj" },
+        { "number": 13, "name": "Goražde" },
+        { "number": 14, "name": "Livno" },
+        { "number": 15, "name": "Mostar" },
+        { "number": 16, "name": "Prijedor" },
+        { "number": 17, "name": "Sarajevo" },
+        { "number": 18, "name": "Tuzla" },
+        { "number": 19, "name": "Zenica" }
+    ] },
+    "Crna Gora": { "min": 20, "max": 29, "data": [
+        { "number": 21, "name": "Podgorica" },
+        { "number": 26, "name": "Nikšić" },
+        { "number": 29, "name": "Pljevlja" }
+    ] },
+    "Hrvatska": { "min": 30, "max": 39, "data": [
+        { "number": 30, "name": "Osijek, Slavonija region" },
+        { "number": 31, "name": "Bjelovar, Virovitica, Koprivnica, Pakrac, Podravina region" },
+        { "number": 32, "name": "Varaždin, Međimurje region" },
+        { "number": 33, "name": "Zagreb" },
+        { "number": 34, "name": "Karlovac" },
+        { "number": 35, "name": "Gospić, Lika region" },
+        { "number": 36, "name": "Rijeka, Pula, Istra and Primorje region" },
+        { "number": 37, "name": "Sisak, Banovina region" },
+        { "number": 38, "name": "Split, Zadar, Dubrovnik, Dalmacija region" },
+        { "number": 39, "name": "ostalo" }
+    ] },
+    "Severna Makedonija": { "min": 41, "max": 49, "data": [
+        { "number": 41, "name": "Bitola" },
+        { "number": 42, "name": "Kumanovo" },
+        { "number": 43, "name": "Ohrid" },
+        { "number": 44, "name": "Prilep" },
+        { "number": 45, "name": "Skopje" },
+        { "number": 46, "name": "Strumica" },
+        { "number": 47, "name": "Tetovo" },
+        { "number": 48, "name": "Veles" },
+        { "number": 49, "name": "Štip" }
+    ] },
+    "Slovenija": { "min": 50, "max": 59, "data": [] },
+    "Centralna Srbija" : { "min": 70, "max": 79, "data": [
+        { "number": 71, "name": "Beograd" },
+        { "number": 72, "name": "Šumadija" },
+        { "number": 73, "name": "Niš" },
+        { "number": 74, "name": "Južna Morava" },
+        { "number": 75, "name": "Zaječar" },
+        { "number": 76, "name": "Podunavlje" },
+        { "number": 77, "name": "Podrinje i Kolubara" },
+        { "number": 78, "name": "Kraljevo" },
+        { "number": 79, "name": "Užice" }
+    ] },
+    "Vojvodina": { "min": 80, "max": 89, "data": [
+        { "number": 80, "name": "Novi Sad" },
+        { "number": 81, "name": "Sombor" },
+        { "number": 82, "name": "Subotica" },
+        { "number": 85, "name": "Zrenjanin" },
+        { "number": 86, "name": "Pančevo" },
+        { "number": 87, "name": "Kikinda" },
+        { "number": 88, "name": "Ruma" },
+        { "number": 89, "name": "Sremska Mitrovica" }
+    ] },
+    "Kosovo i Metohija": { "min": 90, "max": 99, "data": [
+        { "number": 91, "name": "Priština" },
+        { "number": 92, "name": "Kosovska Mitrovica" },
+        { "number": 93, "name": "Peć" },
+        { "number": 94, "name": "Đakovica" },
+        { "number": 95, "name": "Prizren" },
+        { "number": 96, "name": "Kosovsko Pomoravski okrug" }
+    ] }
+}
