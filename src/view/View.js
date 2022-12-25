@@ -2,6 +2,7 @@ import './View.css'
 import InputDataForm from '../form/InputDataForm';
 import Data from '../data/Data';
 import { useSelector } from 'react-redux';
+import grb from '../assets/grb.svg';
 
 function View() {
   const valid = useSelector((state) => state.valid.value)
@@ -10,7 +11,7 @@ function View() {
     <div className="App">
       <div className="Drawer">
         <div className="Crest">
-        <img src="/grb.svg" />
+        <img src={grb} alt = "Grb Srbije" />
         </div>
       </div>
       <div className="Content">

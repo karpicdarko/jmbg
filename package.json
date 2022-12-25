@@ -1,7 +1,7 @@
 {
-  "homepage": "https://karpicdarko.github.io/jmbg",
   "name": "jmbg",
   "version": "0.1.0",
+  "homepage": "https://karpicdarko.github.io/jmbg",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
