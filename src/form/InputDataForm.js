@@ -50,7 +50,7 @@ function InputDataForm() {
 
   const checkJmbgLength = (jmbg) => {
     if(jmbg.length !== 13) {
-      dispatch(setMessage("JMBG mora imati trinaest cifara!"));
+      dispatch(setMessage("JMBG mora imati 13 cifara!"));
       return false;
     }
     return true;
@@ -62,11 +62,11 @@ function InputDataForm() {
         return false;
       }
       if(!between(parseInt(birthDay), 1, 31)) {
-        dispatch(setMessage("Dan rodjenja mora biti izmedju 01 i 31!"))
+        dispatch(setMessage("Dan rođenja mora biti između 01 i 31!"))
         return false;
       }
       if(!between(parseInt(birthMonth), 1, 12)) {
-        dispatch(setMessage("Mesec rodjenja mora biti izmedju 01 i 12!"))
+        dispatch(setMessage("Mesec rođenja mora biti između 01 i 12!"))
         return false;
       }
       if(!between(parseInt(birthYear), 0, 999)) {
@@ -82,21 +82,21 @@ function InputDataForm() {
     const shortMonths = [4, 6, 9, 11];
     if(longMonths.some(month => month === parseInt(birthMonth))) {
       if(parseInt(birthDay) > 31) {
-        dispatch(setMessage("Mesec rođenja koji ste uneli moze imati najvise 31  dan!"));
+        dispatch(setMessage("Mesec rođenja koji ste uneli može imati najviše 31  dan!"));
         return false;
       }
     } else if (shortMonths.some(month => month === parseInt(birthMonth))) {
       if(parseInt(birthDay) > 30) {
-        dispatch(setMessage("Mesec rođenja koji ste uneli moze imati najvise 30 dana!"));
+        dispatch(setMessage("Mesec rođenja koji ste uneli može imati najviše 30 dana!"));
         return false;
       }
     } else { 
       const isLeap = isLeapYear(parseInt(birthYear));
       if(isLeap && parseInt(birthDay) > 29) {
-        dispatch(setMessage("Mesec rođenja koji ste uneli moze imati najvise 29 dana!"));
+        dispatch(setMessage("Mesec rođenja koji ste uneli može imati najviše 29 dana!"));
         return false;
       } else if(!isLeap && parseInt(birthDay) > 28) {
-        dispatch(setMessage("Mesec rođenja koji ste uneli moze imati najvise 28 dana!"));
+        dispatch(setMessage("Mesec rođenja koji ste uneli može imati najviše 28 dana!"));
         return false;
       }
     }
