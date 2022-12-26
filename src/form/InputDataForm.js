@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { validate, invalidate } from '../features/validSlice'
 import { setName, setSurname, setBirthDate, setRegion, setGender } from '../features/personSlice'
 import { setMessage} from '../features/messageSlice'
-import { useDispatch, useSelector} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import JmbgModal from '../modal/JmbgModal'
 import Region from '../data/Region.json'
  
@@ -49,6 +49,7 @@ function InputDataForm() {
        !checkControlNumber(jmbg)) {
       setModalShow(true);
       dispatch(invalidate());
+      setValidated(false);
       return false;
     }
     dispatch(validate());
