@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { validate, invalidate } from '../features/validSlice'
 import { setName, setSurname, setBirthDate, setRegion, setGender } from '../features/personSlice'
 import { setMessage} from '../features/messageSlice'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import JmbgModal from '../modal/JmbgModal'
 import Region from '../data/Region.json'
  
@@ -21,9 +21,16 @@ function InputDataForm() {
   const onSubmit = (event) => {
     const form = event.currentTarget;
     event.preventDefault();
-    setValidated(true);
+    console.log(jmbg.length)
+    if(jmbg.length === 13) {
+      setValidated(true);
+    }
     if (form.checkValidity() === false) {
       event.stopPropagation();
+      if(jmbg.length !== 13) {
+        dispatch(setMessage("JMBG mora imati 13 cifara!"));
+        setModalShow(true);
+      }
     } else {
       checkJmbg(jmbg);
     }
@@ -233,7 +240,7 @@ function InputDataForm() {
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formJmbg">
-            <Form.Control required type="text" placeholder="Unesi JMBG" onChange={e => {
+            <Form.Control type="text" placeholder="Unesi JMBG" onChange={e => {
               dispatch(invalidate())
               setJmbg(e.target.value)
               setValidated(false);
